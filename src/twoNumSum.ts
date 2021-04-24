@@ -14,8 +14,8 @@ export function bf_twoNumberSum(array: number[], targetSum: number) {
     return summations;
 }
 
-// optimal solution with time: O(n) | space: O(n)
-export function opt_twoNumberSum(array: number[], targetSum: number) {
+// cache solution with time: O(n) | space: O(n)
+export function cache_twoNumberSum(array: number[], targetSum: number) {
 // Write your code here.
     let numCache: { [key: string]: boolean } = {};
     
@@ -41,6 +41,22 @@ export function opt_twoNumberSum(array: number[], targetSum: number) {
         }
     }
     
+    return summations;
+}
+
+// optimal solution with time: O(n) | space: O(n)
+export function optimal_twoNumberSum(array: number[], targetSum: number) {
+// Write your code here.
+    let numSet: Set<number> = new Set();
+    let summations: number[][] = [];
+    
+    for (let i = 0; i < array.length; i++) {
+        if (numSet.has(targetSum - array[i]) && targetSum - array[i] !== array[i] ) {
+            summations.push([array[i], targetSum - array[i]]);
+        }
+        numSet.add(array[i]);
+    }
+
     return summations;
 }
 
