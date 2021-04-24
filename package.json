@@ -1,0 +1,26 @@
+{
+  "name": "twoThreeFourNumSum",
+  "version": "1.0.0",
+  "description": "In this set of number summation problems, you are given an input of distinct integers in an array and a targetSum number. \r The output should be an array of arrays which contain two, three, or four distinct integers(depending on which problem) found in the input array that sum up to targetSum.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itshui3/twoThreeFourNumSum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itshui3/twoThreeFourNumSum/issues"
+  },
+  "homepage": "https://github.com/itshui3/twoThreeFourNumSum#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
