@@ -23,6 +23,8 @@ for (let i = 0; i < twoNumSumCases.length; i++) {
         twoNumSumCases[i].targetSum);
 
     console.log(`
+    Two Num Sum Solutions: 
+    ----------------------
     brute force solution: [${bruteForceSolution}]
     cache solution: [${cacheSolution}]
     optimal solution: [${optimalSolution}]
